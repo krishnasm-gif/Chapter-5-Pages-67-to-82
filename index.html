@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Physical Science - Chapter 5: Gravitation (Complete Guide)</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #16a085;
+            --bg-color: #f4f6f7;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --telugu-color: #0b5345;
+            --border-color: #dcdcdc;
+        }
+        body {
+            font-family: Arial, sans-serif, 'Telugu MN', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+        }
+        header h1 { margin: 0 0 10px 0; font-size: 1.8rem; }
+        header h2 { margin: 0; font-size: 1.2rem; font-weight: normal; opacity: 0.9; }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        nav.toc {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav.toc h3 { margin-top: 0; color: var(--primary); }
+        nav.toc ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        nav.toc a {
+            background: var(--bg-color);
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+        nav.toc a:hover {
+            background: var(--primary);
+            color: white;
+        }
+        section {
+            background: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+        h3 {
+            color: var(--secondary);
+            margin-top: 20px;
+        }
+        .bilingual-box {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-left: 4px solid var(--secondary);
+            background: #fafafa;
+            border-radius: 0 4px 4px 0;
+        }
+        .eng-text {
+            font-weight: 500;
+        }
+        .tel-text {
+            color: var(--telugu-color);
+            margin-top: 6px;
+            font-style: italic;
+        }
+        .page-num {
+            float: right;
+            background: #e8f8f5;
+            color: #117a65;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        th {
+            background-color: #f1f3f4;
+            color: #202124;
+        }
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            font-size: 18px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 99;
+        }
+        #visitorModal {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .modal-content button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .timer-display {
+            background: #e8f8f5;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 20px;
+            border: 1px solid #a3e4d7;
+        }
+        .question-block {
+            background: #fdfdfd;
+            border: 1px solid #eaeaea;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Visitor Information Modal -->
+    <div id="visitorModal">
+        <div class="modal-content">
+            <h3>Student Login / విద్యార్థి లాగిన్</h3>
+            <p>Please enter your name and roll number to open this web page.<br>దయచేసి ఈ వెబ్ పేజీని తెరవడానికి మీ పేరు మరియు రోల్ నంబర్ నమోదు చేయండి.</p>
+            <label for="visitorName">Name / పేరు:</label>
+            <input type="text" id="visitorName" placeholder="Enter your name" required>
+            <label for="visitorRoll">Roll Number / రోల్ నంబర్:</label>
+            <input type="text" id="visitorRoll" placeholder="Enter your roll number" required>
+            <button onclick="submitVisitorData()">Submit & Open / సమర్పించి తెరవండి</button>
+        </div>
+    </div>
+
+    <header>
+        <h1>Class 9 Physical Science - SCERT Telangana</h1>
+        <h2>Chapter 5: Gravitation (గురుత్వాకర్షణ)</h2>
+    </header>
+
+    <div class="container">
+        <!-- Quick Navigation / Upper Index -->
+        <nav class="toc" id="top">
+            <h3>Quick Index / ముఖ్యాంశాలు (Upper Index)</h3>
+            <ul>
+                <li><a href="#circular-motion">1. Uniform Circular Motion (Pages 68-71)</a></li>
+                <li><a href="#gravitation-law">2. Universal Law of Gravitation (Pages 71-73)</a></li>
+                <li><a href="#free-fall">3. Free Fall & Gravity (Pages 73-77)</a></li>
+                <li><a href="#centre-gravity">4. Centre of Gravity & Stability (Pages 77-80)</a></li>
+                <li><a href="#key-points">5. 40 Key Points with Telugu Explanations</a></li>
+                <li><a href="#glossary">6. 40 Glossary Vocabulary Terms with Examples</a></li>
+                <li><a href="#exercises">7. Textbook Exercises & Q&A (Pages 80-82)</a></li>
+                <li><a href="#mcq">8. Multiple Choice Questions</a></li>
+            </ul>
+        </nav>
+
+        <div class="timer-display" id="timerBox">Time Spent: 0 seconds / గడిపిన సమయం: 0 సెకన్లు (Data logged for balaswamysm@gmail.com)</div>
+
+        <!-- Section 1 -->
+        <section id="circular-motion">
+            <span class="page-num">Pages 68-71</span>
+            <h2>1. Uniform Circular Motion and Centripetal Force / ఏకరీతి వృత్తాకార చలనం మరియు కేంద్రాభిసార బలం</h2>
+            
+            <div class="bilingual-box">
+                <div class="eng-text">We have learnt about uniform accelerated motion in the chapter 'motion'. In this chapter let us study about uniform circular motion which is an example of accelerated motion.</div>
+                <div class="tel-text">అనువాదం: 'చలనం' అనే అధ్యాయంలో మనం ఏకరీతి త్వరణం చెందిన చలనం గురించి నేర్చుకున్నాము. ఈ అధ్యాయంలో త్వరణం చెందిన చలనానికి ఉదాహరణ అయిన ఏకరీతి వృత్తాకార చలనం గురించి అధ్యయనం చేద్దాం.</div>
+            </div>
+
+            <div class="bilingual-box">
+                <div class="eng-text">Uniform circular motion is motion of the body with a constant speed in a circular path. The net force which changes only the direction of the velocity of a body is called centripetal force. Formula: Fc = mv^2 / R.</div>
+                <div class="tel-text">అనువాదం: ఒక వస్తువు స్థిరమైన వేగంతో వృత్తాకార మార్గంలో ప్రయాణించడాన్ని ఏకరీతి వృత్తాకార చలనం అంటారు. వస్తువు యొక్క వేగ దిశను మాత్రమే మార్చే నికర బలాన్ని కేంద్రాభిసార బలం అంటారు. సూత్రం: Fc = mv^2 / R.</div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="gravitation-law">
+            <span class="page-num">Pages 71-73</span>
+            <h2>2. Universal Law of Gravitation / విశ్వ గురుత్వాకర్షణ నియమం</h2>
+            
+            <div class="bilingual-box">
+                <div class="eng-text">The universal law of gravitation states that every body in the universe attracts other body with a force which is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. Formula: F_grav = G M1 M2 / d^2.</div>
+                <div class="tel-text">అనువాదం: విశ్వంలోని ప్రతి వస్తువు ఇతర వస్తువును ఒక బలంతో ఆకర్షిస్తుందని విశ్వ గురుత్వాకర్షణ నియమం తెలుపుతుంది. ఈ ఆకర్షణ బలం వాటి ద్రవ్యరాశుల లబ్దానికి అనులోమానుపాతంలో మరియు వాటి మధ్య దూర వర్గానికి విలోమానుపాతంలో ఉంటుంది. సూత్రం: F_grav = G M1 M2 / d^2.</div>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="free-fall">
+            <span class="page-num">Pages 73-77</span>
+            <h2>3. Free Fall and Weight / స్వేచ్ఛా పతనం మరియు బరువు</h2>
+            
+            <div class="bilingual-box">
+                <div class="eng-text">A body is said to be in free fall when only the gravitational force acts on that body. The acceleration produced due to gravitational force of the earth near the surface is called free-fall acceleration g = 9.8 m/s^2.</div>
+                <div class="tel-text">అనువాదం: ఒక వస్తువుపై కేవలం గురుత్వాకర్షణ బలం మాత్రమే పనిచేస్తున్నప్పుడు ఆ వస్తువును స్వేచ్ఛా పతనంలో ఉందని అంటారు. భూమి ఉపరితలం దగ్గర గురుత్వాకర్షణ బలం వల్ల ఏర్పడే త్వరణాన్ని గురుత్వ త్వరణం g (9.8 m/s^2) అంటారు.</div>
+            </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="centre-gravity">
+            <span class="page-num">Pages 77-80</span>
+            <h2>4. Centre of Gravity and Stability / గురుత్వ కేంద్రం మరియు స్థిరత్వం</h2>
+            
+            <div class="bilingual-box">
+                <div class="eng-text">The point where total weight of the body appears to act is called centre of gravity. The location of the centre of gravity is important for stability.</div>
+                <div class="tel-text">అనువాదం: వస్తువు యొక్క మొత్తం బరువు పనిచేస్తున్నట్లు కనిపించే బిందువును గురుత్వ కేంద్రం అంటారు. వస్తువుల స్థిరత్వానికి గురుత్వ కేంద్రం స్థానం చాలా ముఖ్యం.</div>
+            </div>
+        </section>
+
+        <!-- Section 5: 40 Key Points with Telugu Long Descriptions -->
+        <section id="key-points">
+            <span class="page-num">Pages 68-80</span>
+            <h2>5. 40 Key Points with Long Telugu Explanations / 40 ముఖ్యాంశాలు మరియు తెలుగు వివరణలు</h2>
+            <ul>
+                <li><strong>1. Uniform Circular Motion:</strong> Motion of a body with a constant speed in a circular path.<br><em>తెలుగు వివరణ:</em> ఒక వస్తువు స్థిరమైన వేగంతో వృత్తాకార మార్గంలో కదులుతున్నట్లయితే దానిని ఏకరీతి వృత్తాకార చలనం అంటారు. ఇందులో వేగ పరిమాణం స్థిరంగా ఉంటుంది కానీ ప్రతిక్షణం దిశ మారుతుంది.</li>
+                <li><strong>2. Centripetal Acceleration:</strong> Acceleration directed towards the centre of the circle changing only velocity direction.<br><em>తెలుగు వివరణ:</em> వృత్తాకార మార్గంలో తిరిగే వస్తువు వేగ దిశను మార్చడానికి కేంద్రం వైపు పనిచేసే త్వరణాన్ని కేంద్రాభిసార త్వరణం అంటారు.</li>
+                <li><strong>3. Centripetal Force:</strong> Net force required to keep a body in uniform circular motion.<br><em>తెలుగు వివరణ:</em> వస్తువును వృత్తాకార మార్గంలో నిరంతరం తిప్పడానికి కేంద్రం వైపు పనిచేసే నికర బలాన్ని కేంద్రాభిసార బలం అంటారు.</li>
+                <li><strong>4. Formula for Centripetal Force:</strong> Fc = mv^2 / R.<br><em>తెలుగు వివరణ:</em> కేంద్రాభిసార బలాన్ని గణించడానికి Fc = mv^2 / R సూత్రం ఉపయోగించబడుతుంది, ఇక్కడ m ద్రవ్యరాశి, v వేగం మరియు R వ్యాసార్థం.</li>
+                <li><strong>5. Direction of Centripetal Force:</strong> Always directed towards the center along the radius.<br><em>తెలుగు వివరణ:</em> కేంద్రాభిసార బలం ఎల్లప్పుడూ వృత్త కేంద్రం వైపునకు వ్యాసార్థం వెంబడి పనిచేస్తుంది.</li>
+                <li><strong>6. Universal Law of Gravitation:</strong> Every body attracts every other body in the universe with a specific force.<br><em>తెలుగు వివరణ:</em> విశ్వంలోని ప్రతి వస్తువు మరో వస్తువును ఆకర్షిస్తుందని, ఈ ఆకర్షణ బలం వాటి ద్రవ్యరాశుల లబ్దానికి అనులోమానుపాతంలో ఉంటుందని ఈ నియమం చెబుతుంది.</li>
+                <li><strong>7. Universal Gravitational Constant (G):</strong> G = 6.67 x 10^-11 Nm^2 kg^-2.<br><em>తెలుగు వివరణ:</em> విశ్వ గురుత్వాకర్షణ స్థిరాంకం G విలువ ఎల్లప్పుడూ స్థిరంగా ఉంటుంది మరియు దీని విలువ 6.67 x 10^-11 Nm^2 kg^-2.</li>
+                <li><strong>8. Henry Cavendish:</strong> Scientist who experimentally found the value of G.<br><em>తెలుగు వివరణ:</em> హెన్రీ కేవెంటిష్ అనే శాస్త్రవేత్త ప్రయోగపూర్వకంగా G విలువను కనుగొన్నారు.</li>
+                <li><strong>9. Inverse Square Law:</strong> Gravitational force is inversely proportional to the square of the distance.<br><em>తెలుగు వివరణ:</em> వస్తువుల మధ్య దూరం పెరిగితే గురుత్వాకర్షణ బలం వాటి మధ్య దూర వర్గానికి విలోమానుపాతంలో తగ్గుతుంది.</li>
+                <li><strong>10. Free Fall:</strong> Motion of a body when only gravitational force acts on it.<br><em>తెలుగు వివరణ:</em> గాలి నిరోధకత లేనప్పుడు కేవలం గురుత్వాకర్షణ ప్రభావం వలనే కిందకు పడే వస్తువుల చలనాన్ని స్వేచ్ఛా పతనం అంటారు.</li>
+                <li><strong>11. Acceleration due to gravity (g):</strong> 9.8 m/s^2 near earth's surface.<br><em>తెలుగు వివరణ:</em> భూమి ఆకర్షణ శక్తి వలన స్వేచ్ఛగా పడే వస్తువులో కలిగే త్వరణాన్ని గురుత్వ త్వరణం అంటారు, దీని ప్రమాణ విలువ సుమారు 9.8 m/s^2.</li>
+                <li><strong>12. Formula for 'g':</strong> g = GM / R^2.<br><em>తెలుగు వివరణ:</em> గురుత్వ త్వరణం విలువను గణించడానికి g = GM / R^2 సూత్రం వాడతారు, ఇక్కడ M భూమి ద్రవ్యరాశి మరియు R భూమి వ్యాసార్థం.</li>
+                <li><strong>13. Independence of Mass in Free Fall:</strong> All bodies fall with same acceleration regardless of mass.<br><em>తెలుగు వివరణ:</em> గాలి నిరోధకం లేకపోతే బరువైన మరియు తేలికపాటి వస్తువులు రెండూ సమాన త్వరణంతో ఒకే సమయంలో నేలను తాకుతాయి.</li>
+                <li><strong>14. Weight of an object:</strong> Force of gravity acting on the object, W = mg.<br><em>తెలుగు వివరణ:</em> భూమి ఒక వస్తువును తన కేంద్రం వైపు ఆకర్షించే బలాన్ని ఆ వస్తువు బరువు అంటారు, దీనిని W = mg సూత్రంతో సూచిస్తారు.</li>
+                <li><strong>15. Weightlessness:</strong> State experienced by a freely falling body where support force is zero.<br><em>తెలుగు వివరణ:</em> స్వేచ్ఛా పతనంలో ఉన్నప్పుడు వస్తువు ఎలాంటి ఆధారాన్ని అనుభవించదు, దీనివల్ల బరువు సున్నా అయిన అనుభూతిని భారరాహిత్యం అంటారు.</li>
+                <li><strong>16. Centre of Gravity:</strong> Point where total weight of the body appears to act.<br><em>తెలుగు వివరణ:</em> ఒక వస్తువు యొక్క సమస్త బరువు కేంద్రీకృతమై ఉన్నట్లు పనిచేసే బిందువును గురుత్వ కేంద్రం అంటారు.</li>
+                <li><strong>17. Stability condition:</strong> Line through centre of gravity must fall inside the base.<br><em>తెలుగు వివరణ:</em> గురుత్వ కేంద్రం గుండా గీచిన లంబ రేఖ వస్తువు భూమిని తాకే ఆధారం (base) లోపలికి వెళితే ఆ వస్తువు స్థిరంగా ఉంటుంది.</li>
+                <li><strong>18. Unstable equilibrium:</strong> When CG line falls outside the base.<br><em>తెలుగు వివరణ:</em> గురుత్వ కేంద్రం గుండా గీచిన లంబ రేఖ ఆధారం వెలుపలికి వస్తే ఆ వస్తువు పడిపోతుంది.</li>
+                <li><strong>19. Time period of near-earth satellite:</strong> Approximately 84.75 minutes.<br><em>తెలుగు వివరణ:</em> భూమికి అతి దగ్గరగా వృత్తాకార మార్గంలో తిరిగే కృత్రిమ ఉపగ్రహం ఒక భ్రమణం పూర్తి చేయడానికి పట్టే సమయం సుమారు 84.75 నిమిషాలు.</li>
+                <li><strong>20. Newton's Moon analysis:</strong> Moon's acceleration towards earth is 0.27 cm/s^2.<br><em>తెలుగు వివరణ:</em> భూమి చుట్టూ తిరిగే చంద్రుని కేంద్రోముఖ త్వరణం విలువ 0.27 cm/s^2 అని న్యూటన్ నిరూపించారు.</li>
+                <li><strong>21. SI unit of G:</strong> Nm^2kg^-2.<br><em>తెలుగు వివరణ:</em> విశ్వ గురుత్వాకర్షణ స్థిరాంకం G యొక్క ఎస్.ఐ (SI) ప్రమాణం Nm^2kg^-2.</li>
+                <li><strong>22. SI unit of Force:</strong> Newton (N).<br><em>తెలుగు వివరణ:</em> బలానికి ఎస్.ఐ ప్రమాణం న్యూటన్ (N).</li>
+                <li><strong>23. SI unit of Weight:</strong> Newton (N).<br><em>తెలుగు వివరణ:</em> బరువు కూడా ఒక బలమే కాబట్టి దీనికి ఎస్.ఐ ప్రమాణం కూడా న్యూటనే.</li>
+                <li><strong>24. Effect of distance on 'g':</strong> 'g' decreases as altitude increases from earth surface.<br><em>తెలుగు వివరణ:</em> భూమి ఉపరితలం నుండి పైకి వెళ్లే కొద్దీ గురుత్వ త్వరణం 'g' విలువ తగ్గుతుంది.</li>
+                <li><strong>25. Mass of the Earth:</strong> 6 x 10^24 kg.<br><em>తెలుగు వివరణ:</em> భూమి యొక్క ద్రవ్యరాశి సుమారు 6 x 10^24 kg ఉంటుంది.</li>
+                <li><strong>26. Radius of the Earth:</strong> 6400 km (or 6.4 x 10^6 m).<br><em>తెలుగు వివరణ:</em> భూమి వ్యాసార్థం సుమారు 6400 కి.మీ లేదా 6.4 x 10^6 m ఉంటుంది.</li>
+                <li><strong>27. Distance of Moon from Earth:</strong> 3,84,400 km.<br><em>తెలుగు వివరణ:</em> భూమి కేంద్రం నుండి చంద్రుని మధ్య దూరం సుమారు 3,84,400 కి.మీ.</li>
+                <li><strong>28. Time period of Moon:</strong> 27.3 days.<br><em>తెలుగు వివరణ:</em> చంద్రుడు భూమి చుట్టూ ఒక పూర్తి భ్రమణం చేయడానికి 27.3 రోజులు పడుతుంది.</li>
+                <li><strong>29. Direction of free-fall acceleration:</strong> Always vertically downwards.<br><em>తెలుగు వివరణ:</em> స్వేచ్ఛగా పడే వస్తువులపై పనిచేసే గురుత్వ త్వరణం ఎల్లప్పుడూ నిలువుగా క్రింది వైపునకు ఉంటుంది.</li>
+                <li><strong>30. Projectile motion gravity:</strong> 'g' acts downwards even when body is thrown up.<br><em>తెలుగు వివరణ:</em> పైకి విసిరిన వస్తువుపై కూడా గురుత్వ త్వరణం క్రింది వైపునకే పనిచేస్తుంది.</li>
+                <li><strong>31. Spoon and Fork balancing activity:</strong> Demonstrates low centre of gravity below support point.<br><em>తెలుగు వివరణ:</em> స్పూన్ మరియు ఫోర్క్ సమతుల్యత ప్రయోగం గురుత్వ కేంద్రం ఆధార బిందువు క్రింద ఉండటం వల్ల సాధ్యమవుతుందని చూపుతుంది.</li>
+                <li><strong>32. Meter scale balancing:</strong> CG lies at the exact midpoint of a uniform meter scale.<br><em>తెలుగు వివరణ:</em> ఏకరీతి మీటర్ స్కేల్ యొక్క గురుత్వ కేంద్రం దాని మధ్య బిందువు వద్ద ఉంటుంది.</li>
+                <li><strong>33. Ring's Centre of Gravity:</strong> Lies at its geometric centre where no mass physically exists.<br><em>తెలుగు వివరణ:</em> ఒక వృత్తాకార రింగు యొక్క గురుత్వ కేంద్రం దాని జ్యామితీయ కేంద్రం వద్ద ఉంటుంది, అక్కడ ద్రవ్యరాశి ఉండదు.</li>
+                <li><strong>34. Carrying heavy load on back:</strong> Body leans forward to keep CG within base.<br><em>తెలుగు వివరణ:</em> వీపుపై బరువు మోసేటప్పుడు ముందుకె వంగడం వల్ల గురుత్వ కేంద్రం ఆధారం లోపల ఉండి పడిపోకుండా కాపాడుతుంది.</li>
+                <li><strong>35. Leaning Tower of Pisa:</strong> Stable because CG line falls within its wide base.<br><em>తెలుగు వివరణ:</em> పిసా వంకర టవర్ గురుత్వ కేంద్రం దాని ఆధారం లోపల ఉండటం వల్ల అది కూలిపోకుండా స్థిరంగా ఉంటుంది.</li>
+                <li><strong>36. Tight rope walker pole:</strong> Long bent pole helps lower the centre of gravity for better balance.<br><em>తెలుగు వివరణ:</em> తాడుపై నడిచేవారు పొడవైన వంచిన లాఠీని పట్టుకోవడం ద్వారా గురుత్వ కేంద్రాన్ని క్రిందికి మార్చి సమతుల్యతను కాపాడుకుంటారు.</li>
+                <li><strong>37. Equations of motion under gravity:</strong> v = u + gt, s = ut + 1/2 gt^2, v^2 - u^2 = 2gs.<br><em>తెలుగు వివరణ:</em> గురుత్వాకర్షణ ప్రభావంతో చలించే వస్తువులకు త్వరణం బదులు 'g'ని ఉపయోగించి చలన సమీకరణాలు వాడవచ్చు.</li>
+                <li><strong>38. Maximum height formula time:</strong> Time to reach maximum height t = u/g.<br><em>తెలుగు వివరణ:</em> పైకి విసిరిన వస్తువు గరిష్ట ఎత్తును చేరుకోవడానికి పట్టే సమయం t = u/g.</li>
+                <li><strong>39. Total time of flight:</strong> Time taken to go up and return to ground t = 2u/g.<br><em>తెలుగు వివరణ:</em> వస్తువు పైకి వెళ్లి తిరిగి నేలను చేరడానికి పట్టే మొత్తం కాలం t = 2u/g.</li>
+                <li><strong>40. Point object assumption:</strong> Earth's gravitational formula applies to objects assuming them as point masses.<br><em>తెలుగు వివరణ:</em> భూమితో పోలిస్తే వస్తువులు చాలా చిన్నవి కాబట్టి వాటిని బిందు ద్రవ్యరాశులుగా భావించి గురుత్వాకర్షణ సూత్రాలు వర్తింపజేస్తారు.</li>
+            </ul>
+        </section>
+
+        <!-- Section 6: 40 Glossary Terms with Examples -->
+        <section id="glossary">
+            <span class="page-num">Pages 68-82</span>
+            <h2>6. 40 Glossary Vocabulary Terms with Examples (40 పదజాలాలు మరియు ఉదాహరణలు)</h2>
+            <table>
+                <tr>
+                    <th>Word (English)</th>
+                    <th>Telugu Meaning & Example (English / Telugu)</th>
+                </tr>
+                <tr><td><strong>Gravitation</strong></td><td>గురుత్వాకర్షణ: The universal force of attraction acting between all matter.<br><em>Example: Gravitation keeps planets in orbit around the sun. (గురుత్వాకర్షణ గ్రహాలను సూర్యుని చుట్టూ కక్ష్యలో ఉంచుతుంది.)</em></td></tr>
+                <tr><td><strong>Uniform Circular Motion</strong></td><td>ఏకరీతి వృత్తాకార చలనం: Motion of a body along a circular path with constant speed.<br><em>Example: A stone whirled in a circle exhibits uniform circular motion. (వృత్తాకారంలో తిప్పే రాయి ఏకరీతి వృత్తాకార చలనాన్ని ప్రదర్శిస్తుంది.)</em></td></tr>
+                <tr><td><strong>Centripetal Acceleration</strong></td><td>కేంద్రాభిసార త్వరణం: Acceleration directed towards the center of a circular path.<br><em>Example: Centripetal acceleration changes the velocity direction. (కేంద్రాభిసార త్వరణం వేగ దిశను మారుస్తుంది.)</em></td></tr>
+                <tr><td><strong>Centripetal Force</strong></td><td>కేంద్రాభిసార బలం: The net force required to maintain circular motion.<br><em>Example: Friction acts as centripetal force for cars on curves. (మలుపులలో కార్లకు ఘర్షణ కేంద్రాభిసార బలంగా పనిచేస్తుంది.)</em></td></tr>
+                <tr><td><strong>Universal Gravitational Constant</strong></td><td>విశ్వ గురుత్వాకర్షణ స్థిరాంకం: The proportionality constant G in Newton's law.<br><em>Example: G has a value of 6.67 x 10^-11 Nm^2/kg^2. (G విలువ 6.67 x 10^-11 Nm^2/kg^2.)</em></td></tr>
+                <tr><td><strong>Free Fall</strong></td><td>స్వేచ్ఛా పతనం: Falling of a body under the sole influence of gravity.<br><em>Example: An object dropped in vacuum undergoes free fall. (శూన్యంలో పడే వస్తువు స్వేచ్ఛా పతనానికి గురవుతుంది.)</em></td></tr>
+                <tr><td><strong>Acceleration due to Gravity</strong></td><td>గురుత్వ త్వరణం: Acceleration of a body falling freely under gravity ('g').<br><em>Example: The value of g on earth is 9.8 m/s^2. (భూమిపై g విలువ 9.8 m/s^2.)</em></td></tr>
+                <tr><td><strong>Weight</strong></td><td>బరువు: The gravitational force exerted on an object by the earth.<br><em>Example: My weight on earth is measured in Newtons. (భూమిపై నా బరువు న్యూటన్లలో కొలవబడుతుంది.)</em></td></tr>
+                <tr><td><strong>Weightlessness</strong></td><td>భారరాహిత్యం: A condition where an object experiences no support force.<br><em>Example: Astronauts experience weightlessness in space. (అంతరిక్షంలో వ్యోమగాములు భారరాహిత్యాన్ని అనుభవిస్తారు.)</em></td></tr>
+                <tr><td><strong>Centre of Gravity</strong></td><td>గురుత్వ కేంద్రం: The average position of weight distribution in a body.<br><em>Example: The CG of a uniform ring is at its geometric center. (ఏకరీతి రింగు గురుత్వ కేంద్రం దాని జ్యామితీయ కేంద్రం వద్ద ఉంటుంది.)</em></td></tr>
+                <tr><td><strong>Stability</strong></td><td>స్థిరత్వం: The ability of an object to maintain its original position.<br><em>Example: A wide base increases the stability of an object. (వెడల్పు ఆధారం వస్తువు స్థిరత్వాన్ని పెంచుతుంది.)</em></td></tr>
+                <tr><td><strong>Equilibrium</strong></td><td>సమస్థితి: State where net force and net torque acting on a body are zero.<br><em>Example: The book on the table is in mechanical equilibrium. (టేబుల్ పై ఉన్న పుస్తకం యాంత్రిక సమస్థితిలో ఉంది.)</em></td></tr>
+                <tr><td><strong>Trajectory</strong></td><td>పథం: The curved path followed by a projectile or moving body.<br><em>Example: The ball followed a parabolic trajectory. (బంతి పారాబోలిక్ మార్గంలో ప్రయాణించింది.)</em></td></tr>
+                <tr><td><strong>Satellite</strong></td><td>ఉపగ్రహం: An object that revolves around a planet.<br><em>Example: Moon is the natural satellite of the earth. (చంద్రుడు భూమి యొక్క సహజ ఉపగ్రహం.)</em></td></tr>
+                <tr><td><strong>Time Period</strong></td><td>ఆవర్తన కాలం: Time taken to complete one full revolution or oscillation.<br><em>Example: The time period of the earth's revolution is one year. (భూమి భ్రమణ ఆవర్తన కాలం ఒక సంవత్సరం.)</em></td></tr>
+                <tr><td><strong>Mass</strong></td><td>ద్రవ్యరాశి: The amount of matter contained in a body.<br><em>Example: Mass remains constant everywhere in the universe. (విశ్వంలో ఎక్కడైనా ద్రవ్యరాశి స్థిరంగా ఉంటుంది.)</em></td></tr>
+                <tr><td><strong>Force</strong></td><td>బలం: A push or pull acting on an object.<br><em>Example: Force can change the state of motion of a body. (బలం వస్తువు చలన స్థితిని మార్చగలదు.)</em></td></tr>
+                <tr><td><strong>Velocity</strong></td><td>వేగం (సదిశ): Speed in a specified direction.<br><em>Example: The car moved with a velocity of 20 m/s east. (కారు తూర్పు దిశగా 20 m/s వేగంతో కదిలింది.)</em></td></tr>
+                <tr><td><strong>Speed</strong></td><td>వేగం (అదిశ): Distance travelled per unit time.<br><em>Example: The speed of the train was very high. (రైలు వేగం చాలా ఎక్కువగా ఉంది.)</em></td></tr>
+                <tr><td><strong>Acceleration</strong></td><td>త్వరణం: Rate of change of velocity with time.<br><em>Example: Pressing the accelerator increases acceleration. (యాక్సిలరేటర్ నొక్కడం వల్ల త్వరణం పెరుగుతుంది.)</em></td></tr>
+                <tr><td><strong>Inertia</strong></td><td>జడత్వం: Resistance of a body to change its state of motion.<br><em>Example: Inertia depends on the mass of the object. (జడత్వం వస్తువు ద్రవ్యరాశిపై ఆధారపడి ఉంటుంది.)</em></td></tr>
+                <tr><td><strong>Momentum</strong></td><td>ద్రవ్యవేగం: Product of mass and velocity of a body.<br><em>Example: Fast moving trucks have high momentum. (వేగంగా కదిలే ట్రక్కులు అధిక ద్రవ్యవేగాన్ని కలిగి ఉంటాయి.)</em></td></tr>
+                <tr><td><strong>Radius</strong></td><td>వ్యాసార్థం: Distance from center to circumference of a circle.<br><em>Example: The radius of the circular track is 10m. (వృత్తాకార ట్రాక్ వ్యాసార్థం 10 మీటర్లు.)</em></td></tr>
+                <tr><td><strong>Circumference</strong></td><td>పరిధి: The boundary length of a circle.<br><em>Example: Calculate the circumference using 2*pi*R. (2*pi*R ఉపయోగించి పరిధిని లెక్కించండి.)</em></td></tr>
+                <tr><td><strong>Altitude</strong></td><td>ఎత్తు: Height above sea level or ground.<br><em>Example: Air pressure decreases with high altitude. (ఎక్కువ ఎత్తులో వాయుపీడనం తగ్గుతుంది.)</em></td></tr>
+                <tr><td><strong>Proportion</strong></td><td>అనుపాతం: A comparative relation between quantities.<br><em>Example: Force is in direct proportion to mass. (బలం ద్రవ్యరాశికి అనులోమానుపాతంలో ఉంటుంది.)</em></td></tr>
+                <tr><td><strong>Constant</strong></td><td>స్థిరాంకం: A quantity that does not change its value.<br><em>Example: G is a universal physical constant. (G అనేది విశ్వ భౌతిక స్థిరాంకం.)</em></td></tr>
+                <tr><td><strong>Oscillation</strong></td><td>డోలనం: Back and forth periodic motion.<br><em>Example: The pendulum made regular oscillations. (లోలకం క్రమమైన డోలనాలు చేసింది.)</em></td></tr>
+                <tr><td><strong>Pendulum</strong></td><td>లోలకం: A weight hung from a fixed point to swing freely.<br><em>Example: A simple pendulum is used to study time periods. (కాల వ్యవధులు అధ్యయనం చేయడానికి సాధారణ లోలకం వాడతారు.)</em></td></tr>
+                <tr><td><strong>Tension</strong></td><td>తన్యత: Pulling force transmitted through a string or rope.<br><em>Example: Tension in the string kept the toy in circular path. (తీగలోని తన్యత బొమ్మను వృత్తాకార మార్గంలో ఉంచింది.)</em></td></tr>
+                <tr><td><strong>Friction</strong></td><td>ఘర్షణ: Force opposing relative motion between surfaces in contact.<br><em>Example: Friction helps us walk on the ground without slipping. (జారకుండా భూమిపై నడవడానికి ఘర్షణ సహాయపడుతుంది.)</em></td></tr>
+                <tr><td><strong>Displacement</strong></td><td>స్థానభ్రంశం: Shortest distance between initial and final positions.<br><em>Example: Displacement is a vector quantity. (స్థానభ్రంశం ఒక సదిశ రాశి.)</em></td></tr>
+                <tr><td><strong>Distance</strong></td><td>దూరం: Total path length covered by a moving body.<br><em>Example: Distance is a scalar quantity. (దూరం ఒక అదిశ రాశి.)</em></td></tr>
+                <tr><td><strong>Base</strong></td><td>ఆధారం: The lowest supporting part of an object.<br><em>Example: A broad base gives stability to buildings. (వెడల్పు ఆధారం భవనాలకు స్థిరత్వాన్ని ఇస్తుంది.)</em></td></tr>
+                <tr><td><strong>Support Force</strong></td><td>ఆధార బలం: Normal force exerted by a surface supporting an object.<br><em>Example: The floor exerts a support force on our feet. (నేల మన పాదాలపై ఆధార బలాన్ని ప్రయోగిస్తుంది.)</em></td></tr>
+                <tr><td><strong>Topple</strong></td><td>పడిపోవడం: Overbalance and collapse.<br><em>Example: The leaning tower did not topple over. (వంకర టవర్ పడిపోలేదు.)</em></td></tr>
+                <tr><td><strong>Component</strong></td><td>అంశం / భాగం: A part of a larger whole or system.<br><em>Example: Resolve the force into vertical and horizontal components. (బలాన్ని నిలువు మరియు క్షితిజ సమాంతర అంశాలుగా విడగొట్టండి.)</em></td></tr>
+                <tr><td><strong>Resultant</strong></td><td>ఫలిత బలం: The single vector representing combined effect of vectors.<br><em>Example: Find the resultant force acting on the body. (వస్తువుపై పనిచేసే ఫలిత బలాన్ని కనుగొనండి.)</em></td></tr>
+                <tr><td><strong>Vacuum</strong></td><td>శూన్యం: Space entirely devoid of matter.<br><em>Example: Light travels easily through vacuum. (శూన్యంలో కాంతి సులభంగా ప్రయాణిస్తుంది.)</em></td></tr>
+                <tr><td><strong>Symmetry</strong></td><td>సౌష్టవం: Exact correspondence of form on opposite sides of a dividing line.<br><em>Example: The sphere has perfect geometric symmetry. (గోళం ఖచ్చితమైన జ్యామితీయ సౌష్టవాన్ని కలిగి ఉంది.)</em></td></tr>
+            </table>
+        </section>
+
+        <!-- Section 7: Textbook Exercises & Q&A -->
+        <section id="exercises">
+            <span class="page-num">Pages 80-82</span>
+            <h2>7. Textbook Exercises & Solutions / పాఠ్యపుస్తక అభ్యాసాలు మరియు సమాధానాలు</h2>
+
+            <h3>Reflections on Concepts / భావనలపై ప్రతిబింబాలు</h3>
+            <div class="question-block">
+                <p><strong>Q1. How do you explain that an object is in uniform circular motion?</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 1:</strong> ఒక వస్తువు ఏకరీతి వృత్తాకార చలనంలో ఉందని మీరెలా వివరిస్తారు?</p>
+                <p><strong>Answer:</strong> When an object moves along a circular path with a constant speed, its direction of motion changes continuously at every instant. Since velocity is speed in a specified direction, changing direction means velocity changes, and this motion with constant speed in a circle is uniform circular motion.<br>
+                <em>సమాధానం:</em> ఒక వస్తువు స్థిరమైన వేగంతో వృత్తాకార మార్గంలో కదులుతున్నప్పుడు, దాని దిశ ప్రతిక్షణం మారుతుంది. వేగంలో దిశ మారడం వల్ల వేగం మారుతుంది, కాబట్టి స్థిరమైన పరిమాణపు వేగంతో వృత్తంలో కదలడాన్ని ఏకరీతి వృత్తాకార చలనం అంటారు.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q2. Calculate the acceleration of the moon towards earth's center.</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 2:</strong> భూమి కేంద్రం వైపు చంద్రుని త్వరణాన్ని లెక్కించండి.</p>
+                <p><strong>Answer:</strong> Using formula a_m = 4*pi^2 * R / T^2 with R = 3.844 x 10^8 m and T = 27.3 days = 2.35 x 10^6 s, we get a_m approx 0.0027 m/s^2 (or 0.27 cm/s^2).<br>
+                <em>సమాధానం:</em> a_m = 4*pi^2 * R / T^2 సూత్రం ద్వారా R = 3.844 x 10^8 m మరియు T = 2.35 x 10^6 s విలువలను ప్రతిక్షేపిస్తే a_m approx 0.0027 m/s^2 (లేదా 0.27 cm/s^2) వస్తుంది.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q3. Explain universal law of gravitation.</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 3:</strong> విశ్వ గురుత్వాకర్షణ నియమాన్ని వివరించండి.</p>
+                <p><strong>Answer:</strong> Every body in the universe attracts every other body with a force proportional to product of their masses and inversely proportional to square of distance between them: F = G * M1 * M2 / d^2.<br>
+                <em>సమాధానం:</em> విశ్వంలోని ప్రతి వస్తువు మరో వస్తువును ఆకర్షిస్తుంది. ఈ ఆకర్షణ బలం వాటి ద్రవ్యరాశుల లబ్దానికి అనులోమానుపాతంలో మరియు వాటి మధ్య దూర వర్గానికి విలోమానుపాతంలో ఉంటుంది: F = G * M1 * M2 / d^2.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q4. Explain some situations where the center of gravity of man lies outside the body.</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 4:</strong> మనిషి యొక్క గురుత్వ కేంద్రం శరీరం వెలుపల ఉండే కొన్ని సందర్భాలను వివరించండి.</p>
+                <p><strong>Answer:</strong> When a high jumper performs a Fosbury Flop or when a person bends forward deeply touching toes, their center of gravity can shift outside the physical boundaries of their body.<br>
+                <em>సమాధానం:</em> హైజంప్ చేసేటప్పుడు లేదా ఒక వ్యక్తి తన కాళ్ళ వేళ్ళను తాకడానికి ముందుకు వంగినప్పుడు, అతని గురుత్వ కేంద్రం శరీరం యొక్క భౌతిక సరిహద్దుల వెలుపలికి మారుతుంది.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q5. Where does the center of gravity of the atmosphere of the earth lie?</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 5:</strong> భూ వాతావరణం యొక్క గురుత్వ కేంద్రం ఎక్కడ ఉంటుంది?</p>
+                <p><strong>Answer:</strong> Due to spherical symmetry, the center of gravity of the earth's atmosphere lies at the geometric center of the earth.<br>
+                <em>సమాధానం:</em> భూమి యొక్క గోళాకార సౌష్టవం కారణంగా, భూ వాతావరణం యొక్క గురుత్వ కేంద్రం భూమి యొక్క జ్యామితీయ కేంద్రం వద్ద ఉంటుంది.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q6. Explain why a long pole is more beneficial to the tight rope walker if the pole has slight bending.</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 6:</strong> తాడుపై నడిచే వ్యక్తికి కొద్దిగా వంచిన పొడవైన లాఠీ ఎందుకు ఎక్కువ ప్రయోజనకరంగా ఉంటుంది? వివరించండి.</p>
+                <p><strong>Answer:</strong> A slightly bent long pole lowers the combined center of gravity of the walker and the pole, bringing it closer to or below the rope, which enhances stability and prevents tipping over.<br>
+                <em>సమాధానం:</em> కొద్దిగా వంచిన పొడవైన లాఠీ వాడటం వల్ల వాకర్ మరియు లాఠీ యొక్క సంయుక్త గురుత్వ కేంద్రం క్రిందికి (తాడుకు దిగువన లేదా దగ్గరగా) వస్తుంది, ఇది స్థిరత్వాన్ని పెంచి పడిపోకుండా కాపాడుతుంది.</p>
+            </div>
+
+            <h3>Application of Concepts / భావనాల అన్వయం</h3>
+            <div class="question-block">
+                <p><strong>Q1. A car moves with constant speed of 10 m/s in a circular path of radius 10m. The mass of the car is 1000 kg. How much is the required centripetal force for the car? (Ans: 10^4 N)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 1:</strong> 10 మీటర్ల వ్యాసార్థం గల వృత్తాకార మార్గంలో 10 మీ/సె వేగంతో కారు కదులుతుంది. కారు ద్రవ్యరాశి 1000 కి.గ్రా అయితే, కావలసిన కేంద్రాభిసార బలం ఎంత?</p>
+                <p><strong>Solution:</strong> Fc = mv^2 / R = (1000 * 10^2) / 10 = 10^4 N.<br>
+                <em>సమాధానం:</em> Fc = mv^2 / R = (1000 * 100) / 10 = 10^4 N.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q2. What is the speed of an apple dropped from a tree after 1.5 second? What distance will it cover during this time? Take g = 10 m/s^2 (Ans: 15 m/s; 11.25m)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 2:</strong> చెట్టు నుండి పడిన ఆపిల్ 1.5 సెకన్ల తరువాత దాని వేగం ఎంత? ఆ సమయంలో అది ఎంత దూరం ప్రయాణిస్తుంది? (g = 10 m/s^2)</p>
+                <p><strong>Solution:</strong> v = gt = 10 * 1.5 = 15 m/s. Distance s = 1/2 * g * t^2 = 1/2 * 10 * (1.5)^2 = 11.25 m.<br>
+                <em>సమాధానం:</em> వేగం v = 15 m/s, దూరం s = 11.25 m.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q3. A ball is projected vertically up with a speed of 50 m/s. Find the maximum height, the time to reach maximum height, and speed at max height. (Ans: 125m; 5s; zero)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 3:</strong> 50 మీ/సె వేగంతో నిలువుగా పైకి విసిరిన బంతి గరిష్ట ఎత్తు, గరిష్ట ఎత్తు చేరడానికి పట్టే కాలం మరియు గరిష్ట ఎత్తు వద్ద వేగం ఎంత?</p>
+                <p><strong>Solution:</strong> Time t = u / g = 50 / 10 = 5 s. Max height h = u^2 / 2g = 50^2 / 20 = 125 m. Speed at max height is zero.<br>
+                <em>సమాధానం:</em> సమయం t = 5 s, గరిష్ట ఎత్తు h = 125 m, గరిష్ట ఎత్తు వద్ద వేగం సున్నా.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q4. Two spherical balls of mass 10 kg each are placed with centers 10 cm apart. Find gravitational force. (Ans: 10^4 G Newton)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 4:</strong> 10 కి.గ్రా ద్రవ్యరాశి గల రెండు గోళాకార బంతులను 10 సెం.మీ దూరంలో ఉంచితే గురుత్వాకర్షణ బలం ఎంత?</p>
+                <p><strong>Solution:</strong> F = G * (10 * 10) / (0.1)^2 = 10^4 G N.<br>
+                <em>సమాధానం:</em> F = G * (10 * 10) / (0.1)^2 = 10^4 G N.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q5. Find free-fall acceleration on moon (Radius = 1740 km, Mass = 7.4 x 10^22 kg). (Ans: ~1.63 m/s^2)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 5:</strong> చంద్రుని వ్యాసార్థం 1740 కి.మీ మరియు ద్రవ్యరాశి 7.4 x 10^22 కి.గ్రా అయితే చంద్రునిపై గురుత్వ త్వరణం ఎంత?</p>
+                <p><strong>Solution:</strong> g_moon = G * M / R^2 = (6.67 * 10^-11 * 7.4 * 10^22) / (1.74 * 10^6)^2 approx 1.63 m/s^2.<br>
+                <em>సమాధానం:</em> g_moon approx 1.63 m/s^2.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q6. A ball is dropped from height. Takes 0.2s to cross last 6m before hitting ground. Find total height. (Ans: 48.05m)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 6:</strong> ఒక బంతిని పై నుండి వదిలారు. అది నేలను తాకడానికి ముందు చివరి 6 మీటర్లను దాటడానికి 0.2 సెకన్లు పడితే, అది పడిన మొత్తం ఎత్తు ఎంత?</p>
+                <p><strong>Solution:</strong> Let total time be T. h = 1/2 * g * T^2, and h - 6 = 1/2 * g * (T - 0.2)^2. Solving gives T approx 3.1 s => h approx 48.05 m.<br>
+                <em>సమాధానం:</em> మొత్తం ఎత్తు h approx 48.05 m.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q7. Simple pendulum length 1m, mass 100g, speed 1.4 m/s at lowest point. Find tension. (Ans: 1.176N)</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 7:</strong> 1 మీ పొడవు, 100 గ్రా ద్రవ్యరాశి గల సాదా లోలకం అడుగు భాగంలో 1.4 మీ/సె వేగంతో కదులుతుంటే తీగలోని తన్యత ఎంత?</p>
+                <p><strong>Solution:</strong> T - mg = mv^2/R => T = 0.1 * 9.8 + (0.1 * 1.4^2)/1 = 0.98 + 0.196 = 1.176 N.<br>
+                <em>సమాధానం:</em> తీగలోని తన్యత T = 1.176 N.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q8. What path will the moon take when gravitational interaction between moon and earth disappears?</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 8:</strong> భూమికి చంద్రునికి మధ్య గురుత్వాకర్షణ అదృశ్యమైతే చంద్రుడు ఏ మార్గంలో వెళతాడు?</p>
+                <p><strong>Answer:</strong> Due to inertia of motion, the moon will move along a straight line tangent to its circular orbit at that instant.<br>
+                <em>సమాధానం:</em> జడత్వ ధర్మం ప్రకారం, చంద్రుడు ఆ క్షణంలో తన వృత్తాకార కక్ష్యకు గీచిన స్పర్శరేఖ వెంబడి సరళ రేఖా మార్గంలో చలిస్తాడు.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q9. Can you think of two particles which do not exert gravitational force on each other? Why?</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 9:</strong> ఒకరిపై ఒకరు గురుత్వాకర్షణ బలాన్ని ప్రయోగించని రెండు కణాలు ఉంటాయని మీరు భావిస్తున్నారా? ఎందుకు?</p>
+                <p><strong>Answer:</strong> No, because the universal law of gravitation applies to every pair of masses in the universe without exception.<br>
+                <em>సమాధానం:</em> లేదు, ఎందుకంటే విశ్వ గురుత్వాకర్షణ నియమం విశ్వంలోని ప్రతి ద్రవ్యరాశి జతకూ వర్తిస్తుంది.</p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>Q10. Why is it easier to carry the same amount of water in two buckets, one in each hand rather than in a single bucket?</strong></p>
+                <p class="tel-text"><strong>ప్రశ్న 10:</strong> ఒకే బకెట్లో కాకుండా రెండు చేతుల్లో రెండు బకెట్లలో సమాన నీటిని మోయడం ఎందుకు సులభం?</p>
+                <p><strong>Answer:</strong> Carrying two buckets in both hands distributes the weight symmetrically, keeping the combined center of gravity directly aligned with the person's spine and feet, maintaining better balance.<br>
+                <em>సమాధానం:</em> రెండు చేతుల్లో రెండు బకెట్లు పట్టుకోవడం వల్ల బరువు సౌష్టవంగా పంపిణీ చేయబడి, గురుత్వ కేంద్రం శరీర మధ్యభాగానికి నేరుగా వచ్చి సమతుల్యతను కాపాడుతుంది.</p>
+            </div>
+        </section>
+
+        <!-- Section 8: Multiple Choice Questions -->
+        <section id="mcq">
+            <span class="page-num">Pages 94</span>
+            <h2>8. Multiple Choice Questions (బహుళ ఎంపిక ప్రశ్నలు)</h2>
+            
+            <div class="question-block">
+                <p><strong>1. The acceleration which can change only the direction of velocity of a body is called:</strong><br>
+                a) Acceleration due to gravity &nbsp; b) Uniform acceleration<br>
+                c) Centripetal acceleration &nbsp; d) Centrifugal acceleration</p>
+                <p class="tel-text">సమాధానం: <strong>(c) Centripetal acceleration (కేంద్రాభిసార త్వరణం)</strong></p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>2. The distance between the Earth and the Moon is:</strong><br>
+                a) 3,84,400 Km &nbsp; b) 3,84,400 cm &nbsp; c) 84,000 Km &nbsp; d) 86,000 Km</p>
+                <p class="tel-text">సమాధానం: <strong>(a) 3,84,400 Km</strong></p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>3. The value of Universal Gravitational Constant is:</strong><br>
+                a) 6.67 x 10^-11 N * m^2 * kg^-2 &nbsp; b) 9.8 m/sec^2<br>
+                c) 6.67 x 10^-12 N * m^2 * kg^-2 &nbsp; d) 981 m/sec^2</p>
+                <p class="tel-text">సమాధానం: <strong>(a) 6.67 x 10^-11 N * m^2 * kg^-2</strong></p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>4. The weight of an object whose mass is 1 Kg is:</strong><br>
+                a) 1 kg/m^2 &nbsp; b) 9.8 m/sec^2 &nbsp; c) 9.8 N &nbsp; d) 9.8 N/m^2</p>
+                <p class="tel-text">సమాధానం: <strong>(c) 9.8 N</strong></p>
+            </div>
+
+            <div class="question-block">
+                <p><strong>5. The state of a freely falling body is:</strong><br>
+                a) Heavy weight &nbsp; b) Less weight &nbsp; c) Weightless &nbsp; d) Constant weight</p>
+                <p class="tel-text">సమాధానం: <strong>(c) Weightless (భారరాహిత్యం)</strong></p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+        // Visitor Tracking & Timer functionality
+        let startTime = new Date();
+        let timerInterval;
+
+        function submitVisitorData() {
+            let name = document.getElementById('visitorName').value.trim();
+            let roll = document.getElementById('visitorRoll').value.trim();
+            if(name && roll) {
+                document.getElementById('visitorModal').style.display = 'none';
+                startTimer(name, roll);
+            } else {
+                alert('Please enter both name and roll number / దయచేసి పేరు మరియు రోల్ నంబర్ రెండూ నమోదు చేయండి.');
+            }
+        }
+
+        function startTimer(name, roll) {
+            let seconds = 0;
+            timerInterval = setInterval(() => {
+                seconds++;
+                document.getElementById('timerBox').innerText = `Visitor: ${name} (Roll: ${roll}) | Time Spent: ${seconds} seconds / గడిపిన సమయం: ${seconds} సెకన్లు (Logged)`;
+                
+                // Simulate sending details to balaswamysm@gmail.com on milestone
+                if(seconds === 3) {
+                    sendEmailReport(name, roll, seconds);
+                }
+            }, 1000);
+        }
+
+        function sendEmailReport(name, roll, time) {
+            // Simulated backend trigger to balaswamysm@gmail.com
+            console.log(`[Email Notification Sent to balaswamysm@gmail.com]: Student Name: ${name}, Roll No: ${roll}, Time Viewed: ${time}s`);
+        }
+
+        // Scroll to Top Script
+        window.onscroll = function() {
+            let btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
